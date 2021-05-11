@@ -1,6 +1,7 @@
 public class Question4 {
     public static void main(String[] args) {
 
+    //Write a Java program to print the result of the following operations.
 
         System.out.println("Question 4______________________");
         int a = -5 + 8 * 6;

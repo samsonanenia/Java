@@ -1,6 +1,8 @@
 import java.util.Scanner;
 public class Question5 {
     public static void main(String[] args) {
+        //Write a Java program which reads two integers
+        // from the user and prints the sum and difference both in their own line.
         Scanner input = new Scanner(System.in);
         System.out.println("Enter the first number: ");
         int a = input.nextInt();

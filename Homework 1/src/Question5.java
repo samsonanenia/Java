@@ -1,5 +1,7 @@
 public class Question5 {
     public static void main(String[] args) {
+//Write a Java program to print the sum (addition),
+// multiply, subtract, divide and remainder of two numbers
 
         System.out.println("Question 5_______________________");
         int aa = 125 + 24;

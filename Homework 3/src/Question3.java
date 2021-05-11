@@ -2,6 +2,10 @@ import java.util.Scanner;
 
 public class Question3 {
     public static void main(String[] args) {
+        //Write a program that takes integer input ( 1 to 7)  from the a user ,
+        // 1 representing Monday to 7 representing Sunday. The program should
+        // decide whether the day input is a weekend or a weekday.(Use switch statement)
+
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a number between 1 to 7: ");
         int day = input.nextInt();

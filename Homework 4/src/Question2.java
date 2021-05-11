@@ -1,6 +1,9 @@
 import java.util.Scanner;
 public class Question2 {
     public static void main(String[] args) {
+
+        //Write a Java program to test if an array contains aspecificvalue
+
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a number to check: ");
         int check = input.nextInt();

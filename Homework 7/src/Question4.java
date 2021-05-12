@@ -17,6 +17,12 @@ public class Question4 {
             System.out.println(str);
         }
 
+        System.out.println("Age Sorting:");
+        Collections.sort(students, Student.stuAge);
+        for(Student str: students){
+            System.out.println(str);
+        }
+
     }
 }
 
@@ -72,9 +78,21 @@ class Student implements Comparable {
 
             //descending order
             //return StudentName2.compareTo(StudentName1);
+
         }
     };
+    /*Comparator for sorting the list by roll no*/
+    public static Comparator<Student> stuAge = new Comparator<Student>() {
 
+        public int compare(Student s1, Student s2) {
+
+            int age1 = s1.getAge();
+            int age2 = s2.getAge();
+
+            /*For ascending order*/
+            return age1-age2;
+        }
+    };
 
     @Override
     public int compareTo(Object o) {

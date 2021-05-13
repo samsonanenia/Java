@@ -8,28 +8,28 @@ public class Question4 {
         students.add(new Student("Tirhas", 25));
         students.add(new Student("Seble", 23));
 
+
+
+
         //Sort the students list with firstName
         ////hint use Collections.sort()
         System.out.println("Student Name Sorting:");
-        Collections.sort(students, Student.StuNameComparator);
+        Collections.sort(students);
 
         for(Student str: students){
             System.out.println(str);
         }
 
-        System.out.println("Age Sorting:");
-        Collections.sort(students, Student.stuAge);
-        for(Student str: students){
-            System.out.println(str);
-        }
 
     }
 }
 
+
+
 //File: Student.java
 //hint implement Comparable interface
 
-class Student implements Comparable {
+class Student implements Comparable<Student> {
 
     private String firstName;
     private int age;
@@ -66,38 +66,17 @@ class Student implements Comparable {
                 ", age=" + age +
                 '}';
     }
-    /*Comparator for sorting the list by Student Name*/
-    public static Comparator<Student> StuNameComparator = new Comparator<Student>() {
 
-        public int compare(Student s1, Student s2) {
-            String StudentName1 = s1.getFirstName().toUpperCase();
-            String StudentName2 = s2.getFirstName().toUpperCase();
-
-            //ascending order
-            return StudentName1.compareTo(StudentName2);
-
-            //descending order
-            //return StudentName2.compareTo(StudentName1);
-
-        }
-    };
-    /*Comparator for sorting the list by roll no*/
-    public static Comparator<Student> stuAge = new Comparator<Student>() {
-
-        public int compare(Student s1, Student s2) {
-
-            int age1 = s1.getAge();
-            int age2 = s2.getAge();
-
-            /*For ascending order*/
-            return age1-age2;
-        }
-    };
 
     @Override
-    public int compareTo(Object o) {
+    public int compareTo(Student name) {
+        int compareInt = this.firstName.compareTo(name.firstName);
+        if (compareInt < 0) return -1;
+        if (compareInt > 0) return 1;
         return 0;
     }
+
+
 }
 
 

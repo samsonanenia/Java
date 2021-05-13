@@ -34,10 +34,11 @@ public class Main {
 
 
         System.out.println("----------------3D-------------");
-        ThreeDimentionalShape _3d = new ThreeDimentionalShape("Red", 5);
+        ThreeDimentionalShape _3d = new ThreeDimentionalShape("Red", 5, 15);
         _3d.height(6);
-        _3d.sd(3);
         _3d.co("yellow");
+        _3d.sd(3);
+
 
 
        // rectangle.sd(sides);

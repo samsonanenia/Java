@@ -1,6 +1,9 @@
 import java.util.*;
 public class Question3 {
     public static void main(String[] args) {
+        // 3. Given the list below
+        // a.Try to remove the even elements using normal for loop
+        // b. Remove even elements using iterators
 
             List<Integer> list = new ArrayList<>();
             list.add(4);

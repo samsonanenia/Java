@@ -4,6 +4,8 @@ import java.util.*;
 
 public class Question1 {
     public static void main(String[] args) {
+        //1.Given the list below, please find the sorted unique values, using the set interface
+        // (‘A’,’F’,’A’,’D’, ‘F’,’C’, ‘B’)
       //  ArrayList<Character> letters = new ArrayList<Character>();
         SortedSet<Character> letters = new TreeSet<Character>();
 

@@ -2,6 +2,9 @@ import java.util.*;
 
 public class Question4 {
     public static void main(String[] args) {
+        // 4. Given Student class sort students list with their first name using
+        // comparable interface
+
         List<Student> students = new ArrayList<>();
         students.add(new Student("Hagos", 20));
         students.add(new Student("Zeray", 18));

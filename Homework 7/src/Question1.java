@@ -17,6 +17,7 @@ public class Question1 {
         letters.add('C');
         letters.add('B');
 
+        System.out.println("The sorted unique values are");
         System.out.println(letters);
 
     }

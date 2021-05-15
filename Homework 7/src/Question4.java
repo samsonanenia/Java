@@ -22,8 +22,6 @@ public class Question4 {
         for(Student str: students){
             System.out.println(str);
         }
-
-
     }
 }
 

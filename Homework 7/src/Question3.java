@@ -16,7 +16,7 @@ public class Question3 {
         System.out.println("Original: " + list);
 
         for (int i=0; i<list.size(); i++) {
-            int even= list.get(i)%2;
+            int even= list.get(i) % 2;
             if (even == 0) {
                 list.remove(i);
             }
@@ -27,7 +27,7 @@ public class Question3 {
 
        // List<Integer> itr = new ArrayList<>(myList);
 
-        Iterator<Integer> itr= list.iterator();
+        Iterator<Integer> itr = list.iterator();
 
         while (itr.hasNext()) {
             if (itr.next() % 2 == 0){

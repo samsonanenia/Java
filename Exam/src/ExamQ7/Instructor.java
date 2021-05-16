@@ -1,6 +1,6 @@
 package ExamQ7;
 
-public class Instructor extends Person{
+public class Instructor<statc> extends Person{
     int grossSalary;
 
     public Instructor(String firstName, String lastName, long phone, int grossSalary) {
@@ -24,5 +24,11 @@ public class Instructor extends Person{
                 ", lastName='" + lastName + '\'' +
                 ", phone=" + phone +
                 '}';
+    }
+    //calculateNetSalary - this method takes gross salary and returns net salary assuming tax as 20%.
+    public int calculateNetSalary(int gross){
+        int cacl = (int) (gross * 0.8);
+        System.out.println("The Net Salary is " + cacl);
+        return cacl;
     }
 }

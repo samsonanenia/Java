@@ -12,11 +12,11 @@ public class Question4 {
         students.add(new Student("Seble", 23));
 
 
-
-
         //Sort the students list with firstName
         ////hint use Collections.sort()
         System.out.println("Student Name Sorting:");
+
+
         Collections.sort(students);
 
         for(Student str: students){

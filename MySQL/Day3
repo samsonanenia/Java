@@ -1,0 +1,74 @@
+#1.Create a database called school
+CREATE DATABASE school;
+
+--------------------------------------
+
+#2.Create Student table with studentId, first_name, last_name and address.
+#Make studentId the primary key
+
+CREATE TABLE student(
+studentId INT NOT NULL,
+first_name VARCHAR(100),
+last_name VARCHAR(100),
+address VARCHAR(100),
+PRIMARY KEY ('studentId')
+);
+
+--------------------------------------
+
+#3.Create Course table with courseId, course_name, course_credit.
+#Use courseId as primary key
+
+CREATE TABLE course(
+courseId INT NOT NULL,
+course_name VARCHAR(100) NULL,
+course_credit INT NULL,
+PRIMARY KEY (courseId)
+);
+--------------------------------------
+#4. Insert 5 rows in each table
+
+INSERT INTO student
+VALUES('1','Abel','Abebe','MN'),('2','Jhon','Abebe','NY'),
+('3','Abiy','KB','MD'),('4','Yibrah','Aregahgn','AC'),
+('5','Abduselam','Sheku','Chicago');
+
+INSERT INTO course
+Values('1','Mathematics','4'),('2','Biology','3'),('3','Computer Science','5'),
+('4','Accounting','4'),('5','Art','2');
+
+--------------------------------------
+
+#5.Retrieve all rows from each table
+SELECT * FROM student;
+SELECT * FROM course;
+
+--------------------------------------
+
+#6.Retrieve a row whose id number is 3
+SELECT * FROM course
+WHERE id = 3;
+
+--------------------------------------
+
+#7.Update any column in any row
+UPDATE course
+set courseId = 6
+where courseId =105
+
+--------------------------------------
+
+#8.Delete specific rows in each table using their ids or other column values
+
+DELETE FROM student WHERE studentId = '1'
+DELETE FROM course WHERE course_name = 'Art'
+
+
+
+
+
+
+
+
+
+

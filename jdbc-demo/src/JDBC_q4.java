@@ -23,7 +23,7 @@ public class JDBC_q4 {
             int c = rs.getInt(1);
             sum = sum + c;
         }
-        System.out.println("Total balance is= " + sum);
+        System.out.println("Total balance is = " + sum);
     } catch (Exception e) {
         e.printStackTrace();
     }finally {

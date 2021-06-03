@@ -10,11 +10,14 @@ public class JDBC_q2 {
         ResultSet rs = null;
         try {
             co = DriverManager.getConnection("jdbc:mysql://localhost:3306/bank", "student", "student");
-
+            st = co.createStatement();
             System.out.println("Connection successful");
-            String sql = "SELECT balance*2 FROM account";
+           // String sql = "SELECT first_name, balance, balance*2 as total_balance FROM account";
+            String sql = "update account set balance = balance*2";
+            st.executeUpdate(sql);
 
-            rs = st.executeQuery(sql);
+            String sqlAll = "select * from account";
+            rs = st.executeQuery(sqlAll);
 
             while (rs.next()) {
                 System.out.println(rs.getString("first_name") + " \t " + rs.getDouble("balance"));
@@ -32,7 +35,7 @@ public class JDBC_q2 {
             if (st != null) {
                 st.close();
             }
-
         }
     }
     }
+
